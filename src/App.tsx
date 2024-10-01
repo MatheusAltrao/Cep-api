@@ -6,6 +6,7 @@ import { Button } from './components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { Input } from './components/ui/input';
 import { Label } from './components/ui/label';
+import Loading from './components/ui/loading';
 
 interface CepData {
   cep: string;
@@ -21,6 +22,7 @@ function App() {
   const [cep, setCep] = useState('');
   const [cepData, setCepData] = useState<CepData | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchCep = async (e: FormEvent) => {
     e.preventDefault();
@@ -33,6 +35,7 @@ function App() {
     setCepData(null);
 
     try {
+      setIsLoading(true);
       await delay(2000);
 
       const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
@@ -41,6 +44,7 @@ function App() {
       if (data.erro) {
         setError('Erro ao buscar CEP');
         setCepData(null);
+        setIsLoading(false);
       } else {
         setCepData({
           cep: data.cep,
@@ -50,10 +54,12 @@ function App() {
           street: data.logradouro,
         });
         setError(null);
+        setIsLoading(false);
       }
     } catch (err) {
       setError('Erro ao buscar CEP');
       setCepData(null);
+      setIsLoading(false);
     }
   };
 
@@ -76,10 +82,17 @@ function App() {
                 value={cep}
                 onChange={(e) => setCep(e.target.value.replace(/\D/g, ''))}
               />
-              <Button>
-                <span className=" flex items-center gap-2">
-                  Buscar <Search size={20} />
-                </span>
+
+              <Button disabled={isLoading}>
+                {isLoading ? (
+                  <span className="flex items-center gap-2">
+                    Buscando <Loading />
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-2">
+                    Buscar <Search size={20} />
+                  </span>
+                )}
               </Button>
             </div>
           </form>
