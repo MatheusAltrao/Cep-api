@@ -57,8 +57,8 @@
 <h3>Link da API:</h3>
 <p>Aqui estão a documentação e um exemplo do retorno da API</p>
 
-🌐[API](viacep.com.br/ws/01001000/json/)  
-📜[ Documentação](viacep.com.br/ws/01001000/json/)
+🌐 [API](https://viacep.com.br/ws/01001000/json/)
+📜 [Documentação](https://viacep.com.br/)
 
 <h2>Retorno</h2>
 
@@ -86,6 +86,6 @@
 <li> <strong>Owner:</strong> Matheus Altrão </li>
 <li> <strong>Email:</strong> matheusaltrao2@gmail.com </li>
 <li> <strong>linkedin:</strong><a href='https://www.linkedin.com/in/matheus-altrao/'>linkedin.com/matheus-altrao</a></li>
-<li> <strong>Owner:</strong>  <a href='https://www.matheusaltrao.dev/'>www.matheusaltrao.dev</a>
+<li> <strong>Portfólio:</strong>  <a href='https://www.matheusaltrao.dev/'>www.matheusaltrao.dev</a>
  </li>
 </ul>
