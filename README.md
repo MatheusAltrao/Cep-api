@@ -57,8 +57,8 @@
 <h3>Link da API:</h3>
 <p>Aqui estão a documentação e um exemplo do retorno da API</p>
 
-📜 [Documentação](viacep.com.br/ws/01001000/json/)  
-🌐 [API](viacep.com.br/ws/01001000/json/)
+🌐[API](viacep.com.br/ws/01001000/json/)  
+📜[ Documentação](viacep.com.br/ws/01001000/json/)
 
 <h2>Retorno</h2>
 
