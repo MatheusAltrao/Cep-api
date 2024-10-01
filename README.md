@@ -85,7 +85,7 @@
 <ul>
 <li> <strong>Owner:</strong> Matheus Altrão </li>
 <li> <strong>Email:</strong> matheusaltrao2@gmail.com </li>
-<li> <strong>linkedin:</strong> [linkedin.com/matheus-altrao](https://www.linkedin.com/in/matheus-altrao/) </li>
-<li> <strong>Owner:</strong> Portfolio:[www.matheusaltrao.dev](https://www.matheusaltrao.dev/)
+<li> <strong>linkedin:</strong><a href='https://www.linkedin.com/in/matheus-altrao/'>linkedin.com/matheus-altrao</a></li>
+<li> <strong>Owner:</strong>  <a href='https://www.matheusaltrao.dev/'>www.matheusaltrao.dev</a>
  </li>
 </ul>
